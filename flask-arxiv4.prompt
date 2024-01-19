@@ -1,0 +1,1 @@
+make a flask that shows recent papers on arxiv about AI agents. use a sqlite database. the main page shows a table with columns, paper name, date, title. Another api is called each day to start the scraping of arxiv.  Create a conda enviorment. use pytest to develop unit and integration tests. use python 3.11

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recent Papers on Arxiv</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Recent Papers on Arxiv</h1>
+    <table>
+        <tr>
+            <th>Paper Name</th>
+            <th>Date</th>
+            <th>Title</th>
+        </tr>
+        {% for paper in papers %}
+        <tr>
+            <td>{{ paper[0] }}</td>
+            <td>{{ paper[1] }}</td>
+            <td>{{ paper[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
